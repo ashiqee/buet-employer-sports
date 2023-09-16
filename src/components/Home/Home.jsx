@@ -1,6 +1,7 @@
 import Header from "../Header/Header";
 import Banner from "./Banner";
 import Countdown from "./Countdown";
+import Slider from "./Slider";
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <Header />
       <Banner />
       <Countdown />
+      <Slider />
     </div>
   );
 };

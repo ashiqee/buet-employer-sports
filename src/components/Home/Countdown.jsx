@@ -40,9 +40,9 @@ const Countdown = () => {
           return (
             <div key={label}>
               <div className=" border-4 shadow-2xl bg-rose-800 rounded-box text-neutral-content ">
-                <div className="font-mono  p-4 flex flex-col  ">
+                <div className="font-mono p-2  md:p-4 flex flex-col  ">
                   <span className="text-3xl md:text-5xl"> {value}</span>
-                  <span className="md:text-lg">{label}</span>
+                  <span className="text-sm md:text-lg">{label}</span>
                 </div>
               </div>
             </div>

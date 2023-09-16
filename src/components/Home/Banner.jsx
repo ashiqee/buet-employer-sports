@@ -14,7 +14,8 @@ const Banner = () => {
             <span className="text-lg">
               আন্তঃ সম্মানিত শিক্ষক, কর্মকর্তা ও কর্মচারী প্রীতি ক্রিকেট
               টুর্নামেন্ট -২০২৩
-            </span>{" "}
+            </span>
+            <br />
             <br /> <span className="text-center pt-10">সিজন-৩</span>
           </h1>
           <p className="py-6"></p>
