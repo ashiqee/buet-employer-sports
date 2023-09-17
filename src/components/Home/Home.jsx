@@ -1,9 +1,9 @@
-import Header from "../Header/Header";
-import Banner from "./Banner";
-import Countdown from "./Countdown";
+import Header from "./Header/Header";
+
 import Footer from "./Footer";
-import Gallery from "./Gallery/Gallery";
-import Slider from "./Slider";
+
+import "../Home/home.css";
+import { Outlet } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -11,10 +11,7 @@ const Home = () => {
       <div className="body">
         {" "}
         <Header />
-        <Banner />
-        <Countdown />
-        <Slider />
-        <Gallery />
+        <Outlet />
       </div>
 
       <Footer />

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className="navbar flex-wrap  bg-base-100">
@@ -7,20 +8,26 @@ const Header = () => {
           src="https://upload.wikimedia.org/wikipedia/en/thumb/d/da/BUET_LOGO.svg/1200px-BUET_LOGO.svg.png"
           alt=""
         />
-        <a className=" text-2xl">BUET Cricket Club</a>
+        <a className=" text-2xl">BUET Employer Cricket Club</a>
       </div>
       <div className="flex-col mx-auto md:flex-row md:flex-none">
-        <ul className="menu menu-horizontal px-1 text-lg">
+        <nav className="menu menu-horizontal  px-1 text-lg">
           <li>
-            <a>Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a>Match Schedule</a>
+            <Link>Match Schedule</Link>
           </li>
-        </ul>
-        <button className="btn hover:bg-blue-800 bg-rose-800 text-white">
+          <li>
+            <Link to="/allPlayer">All Players</Link>
+          </li>
+        </nav>
+        <Link
+          to="/Registration"
+          className="btn hover:bg-blue-800 bg-rose-800 text-white"
+        >
           Registration
-        </button>
+        </Link>
       </div>
     </div>
   );

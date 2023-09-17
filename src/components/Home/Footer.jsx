@@ -2,13 +2,13 @@ const Footer = () => {
   return (
     <div>
       <footer className="footer items-center p-4 bg-neutral text-neutral-content mt-5">
-        <aside className="items-center grid-flow-col">
+        <aside className="items-center   grid-flow-col">
           <p>
-            Copyright © 2023 - All right reserved{" "}
+            Copyright © 2023 - All right reserved <br />
             <span className="text-rose-300">Ashek Mahmud Ashiq</span>
           </p>
         </aside>
-        <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+        <nav className="grid-flow-col  gap-4 md:place-self-center md:justify-self-end">
           <a>
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -1,3 +1,5 @@
+import { Navigate } from "react-router-dom";
+
 const Banner = () => {
   return (
     <div className="hero min-h-[600px] bg-base-100">
@@ -13,7 +15,7 @@ const Banner = () => {
             <span className="text-rose-700">বুয়েট</span> <br />{" "}
             <span className="text-lg">
               আন্তঃ সম্মানিত শিক্ষক, কর্মকর্তা ও কর্মচারী প্রীতি ক্রিকেট
-              টুর্নামেন্ট -২০২৩
+              টুর্নামেন্ট -২০২৪
             </span>
             <br />
             <br />{" "}

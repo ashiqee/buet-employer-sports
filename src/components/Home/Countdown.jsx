@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 
-const countdownTargetDate = new Date("2023-11-30T23:59:59");
+const countdownTargetDate = new Date("2023-12-31T23:59:59");
 
 const getTimeLeft = () => {
   const totalTimeLeft = countdownTargetDate - new Date();
@@ -29,9 +29,9 @@ const Countdown = () => {
 
   return (
     <div>
-      <div className="mt-10 grid justify-center text-center">
+      <div className="mt-3 grid justify-center text-center">
         <h2 className="text-2xl text-rose-700">রেজিস্ট্রেশন ডেডলাইন</h2>
-        <h2 className="text-3xl font-bold text-rose-800">November 30,2023</h2>
+        <h2 className="text-3xl font-bold text-rose-800">December 31,2023</h2>
       </div>
       <div className="grid grid-flow-col  gap-4 text-center justify-center auto-cols-max mt-5 ">
         {Object.entries(timeLeft).map((el) => {
