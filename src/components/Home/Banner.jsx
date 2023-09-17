@@ -1,8 +1,8 @@
 const Banner = () => {
   return (
     <div className="hero min-h-[600px] bg-base-100">
-      <div className="hero-content flex-col lg:flex-row-reverse">
-        <div className="mix-blend-multiply mask mask-squircle border-4 shadow-2xl ">
+      <div className="hero-content  drop-shadow-2xl flex-col lg:flex-row-reverse">
+        <div className=" mask mask-squircle border-4 ">
           <img
             src="https://i.ibb.co/Q6Fdrt7/Tigers.jpg
 "
@@ -16,10 +16,13 @@ const Banner = () => {
               টুর্নামেন্ট -২০২৩
             </span>
             <br />
-            <br /> <span className="text-center pt-10">সিজন-৩</span>
+            <br />{" "}
+            <span className="text-center pt-10 drop-shadow-2xl">সিজন-৩</span>
           </h1>
           <p className="py-6"></p>
-          <button className="btn bg-rose-800 text-white">রেজিস্ট্রেশন</button>
+          <button className="btn hover:bg-blue-800 bg-rose-800 text-white drop-shadow-2xl">
+            রেজিস্ট্রেশন
+          </button>
         </div>
       </div>
     </div>

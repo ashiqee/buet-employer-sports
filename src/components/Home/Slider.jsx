@@ -1,8 +1,8 @@
 const Slider = () => {
   return (
-    <div className=" mt-12 flex ">
-      <div className=" w-2/3 ">
-        <div class="carousel w-full rounded-3xl h-[650px] ">
+    <div className=" mt-12 md:flex mb-12">
+      {/*    <div className=" md:w-2/3 mx-auto ">
+        <div class="carousel w-full rounded-3xl md:h-[650px] ">
           <div id="item1" class="carousel-item w-full">
             <img
               src="https://i.ibb.co/Q6Fdrt7/Tigers.jpg
@@ -46,13 +46,13 @@ const Slider = () => {
             4
           </a>
         </div>
-      </div>
+      </div> */}
 
-      <div className="mx-auto mt-10">
-        <ul className="text-3xl grid grid-cols-2 gap-10">
+      <div className="mt-10  mx-auto">
+        <ul className="  grid-cols-4   grid md:grid-cols-7 gap-5 md:gap-20">
           <li>
             <img
-              className="w-28"
+              className="w-28 rounded-full shadow-xl"
               src="https://i.ibb.co/XtffcZs/Tigers.jpg
 "
               alt=""
@@ -60,7 +60,7 @@ const Slider = () => {
           </li>
           <li>
             <img
-              className="w-28"
+              className="w-28 rounded-full shadow-xl"
               src="https://i.ibb.co/0h1WC6j/Gladiators.jpg
 
 "
@@ -69,7 +69,7 @@ const Slider = () => {
           </li>
           <li>
             <img
-              className="w-28"
+              className="w-28 rounded-full shadow-xl"
               src="https://i.ibb.co/qrY7Yvx/King.jpg
 
 "
@@ -78,7 +78,7 @@ const Slider = () => {
           </li>
           <li>
             <img
-              className="w-28"
+              className="w-28 rounded-full shadow-xl"
               src="https://i.ibb.co/kSQ4fQs/Knight-riders.jpg
 
 "
@@ -87,7 +87,7 @@ const Slider = () => {
           </li>
           <li>
             <img
-              className="w-28"
+              className="w-28 rounded-full shadow-xl"
               src="https://i.ibb.co/rx57JsN/lions.jpg
 
 "
@@ -96,25 +96,17 @@ const Slider = () => {
           </li>
           <li>
             <img
-              className="w-28"
+              className="w-28 rounded-full shadow-xl"
               src="https://i.ibb.co/C17vspt/Strikers.jpg
 
 "
               alt=""
             />
           </li>
-          <li>
-            <img
-              className="w-28"
-              src="https://i.ibb.co/C17vspt/Strikers.jpg
 
-"
-              alt=""
-            />
-          </li>
           <li>
             <img
-              className="w-28"
+              className="w-28 rounded-full shadow-xl"
               src="https://i.ibb.co/ZYvKKzY/Thunders.jpg
 
 "

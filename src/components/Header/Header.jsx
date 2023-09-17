@@ -18,7 +18,9 @@ const Header = () => {
             <a>Match Schedule</a>
           </li>
         </ul>
-        <button className="btn bg-rose-800 text-white">Registration</button>
+        <button className="btn hover:bg-blue-800 bg-rose-800 text-white">
+          Registration
+        </button>
       </div>
     </div>
   );
