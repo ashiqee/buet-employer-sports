@@ -8,7 +8,9 @@ const DefaultHome = () => {
       <Banner />
       <Countdown />
       <Slider />
-      <Gallery />
+      <div className="max-w-screen-2xl mx-auto">
+        <Gallery />
+      </div>
     </div>
   );
 };
