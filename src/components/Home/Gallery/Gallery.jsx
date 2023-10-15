@@ -21,7 +21,7 @@ const Gallery = () => {
   };
 
   return (
-    <div>
+    <div className="mx-20">
       <Swiper
         effect={"coverflow"}
         grabCursor={true}

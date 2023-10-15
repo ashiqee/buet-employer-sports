@@ -42,7 +42,7 @@ const AllPlayer = () => {
   }, [Players]);
 
   return (
-    <div>
+    <div className="max-w-screen-2xl mx-auto px-4">
       {/*  <h2>All Player: {Players.length}</h2> */}
 
       {/* Player search and filter here  */}
