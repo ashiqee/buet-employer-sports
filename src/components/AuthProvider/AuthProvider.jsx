@@ -3,7 +3,9 @@ import {
   getAuth,
   GoogleAuthProvider,
   onAuthStateChanged,
+  RecaptchaVerifier,
   signInWithEmailAndPassword,
+  signInWithPhoneNumber,
   signInWithPopup,
   signOut,
 } from "firebase/auth";
@@ -14,10 +16,32 @@ import app from "../Firebase/firebase.config";
 
 const auth = getAuth(app);
 const googleProvider = new GoogleAuthProvider();
+
+// phone Auth
+
+window.recaptchaVerifier = new RecaptchaVerifier(auth, "sign-in-button", {
+  size: "invisible",
+  callback: (response) => {
+    // reCAPTCHA solved, allow signInWithPhoneNumber.
+  },
+});
+window.recaptchaVerifier = new RecaptchaVerifier(
+  auth,
+  "recaptcha-container",
+  {}
+);
+// const phoneNumber = getPhoneNumberFromInput();
+// const appVerifier = window.recaptchaVerifier;
+
 export const AuthContext = createContext(null);
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
+
+  const mobileReg = (phoneNumber) => {
+    setLoading(true);
+    return signInWithPhoneNumber(auth, phoneNumber);
+  };
 
   const createUser = (email, password) => {
     setLoading(true);
@@ -51,7 +75,9 @@ const AuthProvider = ({ children }) => {
 
   const authInfo = {
     user,
+    auth,
     createUser,
+    mobileReg,
     googleSignIn,
     signIn,
     logOut,
