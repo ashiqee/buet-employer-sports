@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-import { FcGoogle } from "react-icons/Fc";
+import { FaGoogle } from "react-icons/Fa";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 
 const Login = () => {
@@ -48,8 +48,8 @@ const Login = () => {
 
   return (
     <div className="my-20">
-      <div className="w-full max-w-sm p-4 bg-transparent mx-auto bg-opacity-10 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
-        <form onSubmit={handleLogin} className="space-y-6" action="#">
+      <div className="w-full max-w-sm p-4 min-h-[150px] bg-transparent mx-auto bg-opacity-10 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+        {/* <form onSubmit={handleLogin} className="space-y-6" action="#">
           <h5 className="text-xl font-medium text-gray-900 dark:text-white">
             Sign in to our platform
           </h5>
@@ -112,16 +112,16 @@ const Login = () => {
               Create account
             </Link>
           </div>
-        </form>
+        </form> */}
         <div>
           <div
             className="w-full btn  mt-4 flex gap-2 hover:bg-rose-400  mx-auto rounded-3xl bg-blue-600"
             onClick={handleGoogleLogin}
           >
-            <span className="text-4xl items-center  flex gap-2 mx-auto">
-              <FcGoogle className="bg-white h-full  rounded-md" />
-              <h2 className="text-center font-medium  text-xl  text-white">
-                Sing up with Google
+            <span className="items-center  flex gap-2 mx-auto">
+              <FaGoogle className="text-xl text-red-500" />
+              <h2 className="text-center pt-1 text-xl  text-white">
+                Login with google
               </h2>
             </span>
           </div>

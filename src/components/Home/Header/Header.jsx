@@ -1,8 +1,10 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
+import useGoogleAuth from "../../../utilis/useGoogleAuth";
 
 const Header = () => {
+  const { handleGoogleLogin } = useGoogleAuth()
   const { logOut, user, loading } = useContext(AuthContext);
   if (loading) {
     return (
@@ -87,7 +89,7 @@ const Header = () => {
         ) : (
           <>
             <Link
-              to="/Registration"
+              onClick={handleGoogleLogin}
               className="btn hover:bg-blue-800 bg-rose-800  text-white"
             >
               Registration

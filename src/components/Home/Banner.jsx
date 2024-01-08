@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom";
 
+import useGoogleAuth from "../../utilis/useGoogleAuth";
+
+
 const Banner = () => {
+
+  const { handleGoogleLogin } = useGoogleAuth()
+
   return (
     <div className="hero min-h-[600px] bg-base-100">
       <div className="flex items-center   drop-shadow-2xl gap-20 flex-col lg:flex-row-reverse">
@@ -27,13 +33,14 @@ const Banner = () => {
             alt=""
           />
           <p className="py-6"></p>
-          <Link to="/Registration">
-            <button className="btn hover:bg-blue-800 bg-rose-800 text-white drop-shadow-2xl">
+          <Link >
+            <button onClick={handleGoogleLogin} className="btn hover:bg-blue-800 bg-rose-800 text-white drop-shadow-2xl">
               রেজিস্ট্রেশন
             </button>
           </Link>
         </div>
       </div>
+
     </div>
   );
 };

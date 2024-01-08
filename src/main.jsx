@@ -11,7 +11,9 @@ import AuthProvider from "./components/AuthProvider/AuthProvider";
 import Login from "./components/Login/Login";
 import Schedule from "./components/Schedule/Schedule";
 import Root from "./Root";
-import Profile from "./components/Dashboard/Profile/Profile";
+
+import Dashboard from "./pages/Dashboard/Dashboard.jsx";
+import Profile from "./pages/Dashboard/Profile/Profile.jsx";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +45,10 @@ const router = createBrowserRouter([
         path: "/profile",
         element: <Profile />,
       },
+      {
+        path: '/dashboard',
+        element: <Dashboard />
+      }
     ],
   },
 ]);
